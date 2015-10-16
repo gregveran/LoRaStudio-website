@@ -352,18 +352,20 @@ i.why-icon {
   vertical-align: middle;
 }
 
-/* how */
 
-.how {
+.intro {
   padding: 50px 0;
   margin-bottom: 3px;
+  background: #8F8F8F;
+  color: #ffffff;
+
 }
 
 
 .what {
   padding: 50px 0;
   margin-bottom: 3px;
-  background: #8F8F8F;
+  background: #FF6600;
   color: #ffffff;
 }
 
