@@ -118,14 +118,15 @@ padding-bottom:30px;
 .vert-text h1 {
   padding: 0;
   margin: 0;
-  font-size: 4em;
+  font-size: 6em;
   font-weight: 700;
+  color:#ff6600;
 }
 
 .vert-text h2 {
   padding: 0;
   margin: 0;
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
 }
 
@@ -133,7 +134,7 @@ padding-bottom:30px;
   color: #ff6600;
   padding: 0;
   margin: 0;
-  font-size: 24px;
+  font-size: 6em;
   font-weight: 700;
 }
 
@@ -341,7 +342,7 @@ i.why-icon {
 }
 
 #callout2 {
-  color: #000000;
+  color: #000000  ;
   display: table;
   height: 400px;
   width: 100%;
@@ -355,7 +356,7 @@ i.why-icon {
 }
 
 #callout3 {
-  color: #ffffff;
+  color: #ff6600;
   display: table;
   height: 400px;
   width: 100%;
