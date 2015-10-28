@@ -1,6 +1,6 @@
 /*
   Jquery Validation using jqBootstrapValidation
-   example is taken from jqBootstrapValidation docs 
+   example is taken from jqBootstrapValidation docs
   */
 $(function() {
 
@@ -14,20 +14,20 @@ $(function() {
      submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
        // get values from FORM
-       var nameModal = $("input#nameModal").val();  
-       var emailModal = $("input#emailModal").val(); 
+       var nameModal = $("input#nameModal").val();
+       var emailModal = $("input#emailModal").val();
        var messageModal = $("textarea#messageModal").val();
         var firstName = nameModal; // For Success/Failure Message
            // Check for white space in name for Success/Fail message
         if (firstName.indexOf(' ') >= 0) {
 	   firstName = name.split(' ').slice(0, -1).join(' ');
-         }        
+         }
 	 $.ajax({
                 url: "./bin/contact_meModal.php",
             	type: "POST",
             	data: {nameModal: nameModal, emailModal: emailModal, messageModal: messageModal},
             	cache: false,
-            	success: function() {  
+            	success: function() {
             	// Success message
             	   $('#successModal').html("<div class='alert alert-success'>");
             	   $('#successModal > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -36,16 +36,16 @@ $(function() {
             		.append("<strong>Your message has been sent. </strong>");
  		  $('#successModal > .alert-success')
  			.append('</div>');
- 						    
+
  		  //clear all fields
  		  $('#contactFormModal').trigger("reset");
  	      },
- 	   error: function() {		
+ 	   error: function() {
  		// Fail message
  		 $('#successModal').html("<div class='alert alert-danger'>");
             	$('#successModal > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             	 .append( "</button>");
-            	$('#successModal > .alert-danger').append("<strong>Sorry "+firstName+" it seems that the mail server is not responding...</strong> Could you please email me directly <a href='mailto:antonin.lapiche@orange.com?Subject=Message_Me from orangegigastudio.com'>here</a> ? Sorry for the inconvenience!");
+            	$('#successModal > .alert-danger').append("<strong>Sorry "+firstName+" it seems that the mail server is not responding...</strong> Could you please email me directly <a href='mailto:gregory.veran@orange.com?Subject=Message_Me from orangelorastudio.com'>here</a> ? Sorry for the inconvenience!");
  	        $('#successModal > .alert-danger').append('</div>');
  		//clear all fields
  		$('#contactFormModal').trigger("reset");
@@ -62,9 +62,9 @@ $(function() {
                     $(this).tab("show");
         });
   });
- 
 
-/*When clicking on Full hide fail/success boxes */ 
+
+/*When clicking on Full hide fail/success boxes */
 $('#nameModal').focus(function() {
      $('#successModal').html('');
   });

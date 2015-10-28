@@ -21,7 +21,7 @@ font-family: 'Lato', sans-serif;
 #subtitle h2{
 font-size:16px;
 font-weight:700;
-letter-spacing: 6px;
+letter-spacing: 4px;
 line-height: 200%;
 padding-bottom:50px;
 
@@ -47,7 +47,7 @@ padding-bottom:50px;
 	height:40px;
 	margin-left:30px;
 	font-weight:400;
-	font-size: 11px;
+	font-size: 14px;
 	letter-spacing: 2px;
     color: #000000;
 	border-style: solid;
@@ -107,6 +107,31 @@ padding-bottom:50px;
     border-bottom-color: #ff6600;
 }
 
+.vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 40px;
+  padding: 50px 0;
+}
+
+.vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 6em;
+  font-weight: 700;
+}
+
+
+.titleorange {
+  color: #ff6600;
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
 .why  a{
   text-decoration: underline;
   color: #ff6600;
@@ -117,29 +142,22 @@ padding-bottom:50px;
   color: #ff6600;
 }
 
-.vert-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.vert-text h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 .btn-black {
-	color: #000000;
+	color: #ffffff;
+  background-color: #000000;
 	padding-left:50px;
 	padding-right:50px;
 	font-weight: bold;
-	font-size:14px;
+	font-size:30px;
 	border-color: #000000;
 	border-width: 3px;
   	border-style: solid;
-	background-color:transparent;
 	-webkit-border-top-left-radius:0px;
 	-moz-border-radius-topleft:0px;
 	border-top-left-radius:0px;
@@ -159,7 +177,7 @@ padding-bottom:50px;
 .btn-black:active,
 .btn-black.active {
   background-color: #000000;
-  color: #ffffff;
+  color: #ff6600;
   border-color: #000000;
 }
 
@@ -193,6 +211,10 @@ fieldset[disabled] .btn-orange.active {
   border-color: #ff6600;
 }
 
+.red {
+  color: #ff0000;
+}
+
 /* Full Page Image Header Area */
 
 .header {
@@ -201,7 +223,7 @@ fieldset[disabled] .btn-orange.active {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/bkg_image.jpg) no-repeat center center fixed;
+  background: url(../img/texture.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -315,7 +337,7 @@ i.why-icon {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/Orange_770754_01052014_small.jpg) no-repeat center center fixed;
+  background: url(../img/unchained.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -329,7 +351,7 @@ i.why-icon {
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/Orange_770753_01052014_small.jpg) no-repeat center center fixed;
+  background: url(../img/U155532_sn_en.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -373,6 +395,7 @@ i.why-icon {
   padding: 50px 0;
   margin-bottom: 3px;
   color: #000000;
+  font-weight: bold;
 }
 
 .event li{
@@ -414,11 +437,13 @@ color: #000000;
   background: #ffffff;
   padding: 50px 0;
   color: #000000;
-
+  margin-bottom: 3px;
 }
 
-.who {
-  margin-bottom: 3px;
+.LoRa {
+  background: #8F8F8F;
+  padding: 50px 0;
+  color: #ffffff;
 }
 
 
@@ -521,7 +546,7 @@ i.scroll:hover {
   display: table;
   height: 150px;
   width: 100%;
-  background: url(../img/Orange_770754_01052014_small.jpg) no-repeat center center fixed;
+  background: url(../img/unchained.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
